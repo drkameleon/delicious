@@ -16,8 +16,8 @@ import Foundation
 /**
  Displays alert dialog/sheet
  */
-func alertDialog(_ message: String, info: String, handler: @escaping ()->Void,
-                 style: NSAlert.Style = .informational, sheet: Bool = true) {
+func alertDialog(_ message: String, info: String, handler: @escaping ()->Void, style: NSAlert.Style = .informational, sheet: Bool = true) {
+    
     printLog()
     
     let alert = NSAlert()
@@ -40,8 +40,8 @@ func alertDialog(_ message: String, info: String, handler: @escaping ()->Void,
 /**
  Displays confirmation dialog/sheet
  */
-func confirmationDialog(_ message: String, info: String, handler: @escaping (Bool)->Void,
-                        first: String = "OK", second: String = "Cancel", style: NSAlert.Style = .informational, sheet: Bool = true) {
+func confirmationDialog(_ message: String, info: String, handler: @escaping (Bool)->Void, first: String = "OK", second: String = "Cancel", style: NSAlert.Style = .informational, sheet: Bool = true) {
+    
     printLog()
     
     let alert = NSAlert()
@@ -64,9 +64,7 @@ func confirmationDialog(_ message: String, info: String, handler: @escaping (Boo
 /**
  Displays Open dialog/sheet
  */
-func openDialog(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = {},
-                files: Bool = true, filetypes: [String] = [], directories: Bool = false,
-                multiple: Bool = true, hidden: Bool = true, sheet: Bool = true) {
+func openDialog(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = {}, files: Bool = true, filetypes: [String] = [], directories: Bool = false, multiple: Bool = true, hidden: Bool = true, sheet: Bool = true) {
     
     printLog()
     
@@ -97,8 +95,8 @@ func openDialog(handler: @escaping ([String])->Void, otherwise: @escaping ()->Vo
 /**
  Displays Save dialog/sheet
 */
-func saveDialog(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = {},
-                filetypes: [String] = [], sheet: Bool = true) {
+func saveDialog(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = {}, filetypes: [String] = [], sheet: Bool = true) {
+    
     printLog()
     
     let panel = NSSavePanel()

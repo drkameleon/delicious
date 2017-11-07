@@ -15,7 +15,7 @@ import Foundation
 
 extension NSColor {
     
-    convenience init(red: Int, green: Int, blue: Int) {
+    convenience init (red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -26,7 +26,7 @@ extension NSColor {
     /**
      Creates an NSColor instance from a hex value
      */
-    convenience init(hex: Int) {
+    convenience init (hex: Int) {
         self.init(
             red: (hex >> 16) & 0xFF,
             green: (hex >> 8) & 0xFF,
