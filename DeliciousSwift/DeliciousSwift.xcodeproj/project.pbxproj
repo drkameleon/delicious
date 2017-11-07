@@ -7,107 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C2F20221FB1DBC600892CC5 /* DeliciousSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2F20181FB1DBC600892CC5 /* DeliciousSwift.framework */; };
-		8C2F20271FB1DBC600892CC5 /* DeliciousSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F20261FB1DBC600892CC5 /* DeliciousSwiftTests.swift */; };
-		8C2F20291FB1DBC600892CC5 /* DeliciousSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C2F201B1FB1DBC600892CC5 /* DeliciousSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C15BA4D1FB1F9C70082BD05 /* DeliciousSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C15BA541FB1F9D30082BD05 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA531FB1F9D30082BD05 /* Files.swift */; };
+		8C15BA561FB1FC3D0082BD05 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA551FB1FC3D0082BD05 /* Log.swift */; };
+		8C15BA581FB1FCBA0082BD05 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA571FB1FCBA0082BD05 /* Strings.swift */; };
+		8C15BA5A1FB1FE320082BD05 /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA591FB1FE320082BD05 /* Dialogs.swift */; };
+		8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5B1FB1FEA60082BD05 /* Colors.swift */; };
+		8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5D1FB1FF280082BD05 /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8C2F20231FB1DBC600892CC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C2F200F1FB1DBC600892CC5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C2F20171FB1DBC600892CC5;
-			remoteInfo = DeliciousSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		8C2F20181FB1DBC600892CC5 /* DeliciousSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeliciousSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C2F201B1FB1DBC600892CC5 /* DeliciousSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliciousSwift.h; sourceTree = "<group>"; };
-		8C2F201C1FB1DBC600892CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C2F20211FB1DBC600892CC5 /* DeliciousSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliciousSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C2F20261FB1DBC600892CC5 /* DeliciousSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliciousSwiftTests.swift; sourceTree = "<group>"; };
-		8C2F20281FB1DBC600892CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C15BA481FB1F9C70082BD05 /* DeliciousSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeliciousSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliciousSwift.h; sourceTree = "<group>"; };
+		8C15BA4C1FB1F9C70082BD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C15BA531FB1F9D30082BD05 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		8C15BA551FB1FC3D0082BD05 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		8C15BA571FB1FCBA0082BD05 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		8C15BA591FB1FE320082BD05 /* Dialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogs.swift; sourceTree = "<group>"; };
+		8C15BA5B1FB1FEA60082BD05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8C15BA5D1FB1FF280082BD05 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8C2F20141FB1DBC600892CC5 /* Frameworks */ = {
+		8C15BA441FB1F9C70082BD05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C2F201E1FB1DBC600892CC5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C2F20221FB1DBC600892CC5 /* DeliciousSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C2F200E1FB1DBC600892CC5 = {
+		8C15BA3E1FB1F9C70082BD05 = {
 			isa = PBXGroup;
 			children = (
-				8C2F201A1FB1DBC600892CC5 /* DeliciousSwift */,
-				8C2F20251FB1DBC600892CC5 /* DeliciousSwiftTests */,
-				8C2F20191FB1DBC600892CC5 /* Products */,
+				8C15BA4A1FB1F9C70082BD05 /* DeliciousSwift */,
+				8C15BA491FB1F9C70082BD05 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8C2F20191FB1DBC600892CC5 /* Products */ = {
+		8C15BA491FB1F9C70082BD05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C2F20181FB1DBC600892CC5 /* DeliciousSwift.framework */,
-				8C2F20211FB1DBC600892CC5 /* DeliciousSwiftTests.xctest */,
+				8C15BA481FB1F9C70082BD05 /* DeliciousSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C2F201A1FB1DBC600892CC5 /* DeliciousSwift */ = {
+		8C15BA4A1FB1F9C70082BD05 /* DeliciousSwift */ = {
 			isa = PBXGroup;
 			children = (
-				8C2F201B1FB1DBC600892CC5 /* DeliciousSwift.h */,
-				8C2F201C1FB1DBC600892CC5 /* Info.plist */,
+				8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */,
+				8C15BA4C1FB1F9C70082BD05 /* Info.plist */,
+				8C15BA5B1FB1FEA60082BD05 /* Colors.swift */,
+				8C15BA591FB1FE320082BD05 /* Dialogs.swift */,
+				8C15BA531FB1F9D30082BD05 /* Files.swift */,
+				8C15BA551FB1FC3D0082BD05 /* Log.swift */,
+				8C15BA571FB1FCBA0082BD05 /* Strings.swift */,
+				8C15BA5D1FB1FF280082BD05 /* Tasks.swift */,
 			);
 			path = DeliciousSwift;
-			sourceTree = "<group>";
-		};
-		8C2F20251FB1DBC600892CC5 /* DeliciousSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				8C2F20261FB1DBC600892CC5 /* DeliciousSwiftTests.swift */,
-				8C2F20281FB1DBC600892CC5 /* Info.plist */,
-			);
-			path = DeliciousSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8C2F20151FB1DBC600892CC5 /* Headers */ = {
+		8C15BA451FB1F9C70082BD05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2F20291FB1DBC600892CC5 /* DeliciousSwift.h in Headers */,
+				8C15BA4D1FB1F9C70082BD05 /* DeliciousSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8C2F20171FB1DBC600892CC5 /* DeliciousSwift */ = {
+		8C15BA471FB1F9C70082BD05 /* DeliciousSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C2F202C1FB1DBC600892CC5 /* Build configuration list for PBXNativeTarget "DeliciousSwift" */;
+			buildConfigurationList = 8C15BA501FB1F9C70082BD05 /* Build configuration list for PBXNativeTarget "DeliciousSwift" */;
 			buildPhases = (
-				8C2F20131FB1DBC600892CC5 /* Sources */,
-				8C2F20141FB1DBC600892CC5 /* Frameworks */,
-				8C2F20151FB1DBC600892CC5 /* Headers */,
-				8C2F20161FB1DBC600892CC5 /* Resources */,
+				8C15BA431FB1F9C70082BD05 /* Sources */,
+				8C15BA441FB1F9C70082BD05 /* Frameworks */,
+				8C15BA451FB1F9C70082BD05 /* Headers */,
+				8C15BA461FB1F9C70082BD05 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -115,74 +99,44 @@
 			);
 			name = DeliciousSwift;
 			productName = DeliciousSwift;
-			productReference = 8C2F20181FB1DBC600892CC5 /* DeliciousSwift.framework */;
+			productReference = 8C15BA481FB1F9C70082BD05 /* DeliciousSwift.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		8C2F20201FB1DBC600892CC5 /* DeliciousSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C2F202F1FB1DBC600892CC5 /* Build configuration list for PBXNativeTarget "DeliciousSwiftTests" */;
-			buildPhases = (
-				8C2F201D1FB1DBC600892CC5 /* Sources */,
-				8C2F201E1FB1DBC600892CC5 /* Frameworks */,
-				8C2F201F1FB1DBC600892CC5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8C2F20241FB1DBC600892CC5 /* PBXTargetDependency */,
-			);
-			name = DeliciousSwiftTests;
-			productName = DeliciousSwiftTests;
-			productReference = 8C2F20211FB1DBC600892CC5 /* DeliciousSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8C2F200F1FB1DBC600892CC5 /* Project object */ = {
+		8C15BA3F1FB1F9C70082BD05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = drkameleon;
 				TargetAttributes = {
-					8C2F20171FB1DBC600892CC5 = {
+					8C15BA471FB1F9C70082BD05 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
-					};
-					8C2F20201FB1DBC600892CC5 = {
-						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8C2F20121FB1DBC600892CC5 /* Build configuration list for PBXProject "DeliciousSwift" */;
+			buildConfigurationList = 8C15BA421FB1F9C70082BD05 /* Build configuration list for PBXProject "DeliciousSwift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8C2F200E1FB1DBC600892CC5;
-			productRefGroup = 8C2F20191FB1DBC600892CC5 /* Products */;
+			mainGroup = 8C15BA3E1FB1F9C70082BD05;
+			productRefGroup = 8C15BA491FB1F9C70082BD05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C2F20171FB1DBC600892CC5 /* DeliciousSwift */,
-				8C2F20201FB1DBC600892CC5 /* DeliciousSwiftTests */,
+				8C15BA471FB1F9C70082BD05 /* DeliciousSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8C2F20161FB1DBC600892CC5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C2F201F1FB1DBC600892CC5 /* Resources */ = {
+		8C15BA461FB1F9C70082BD05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,33 +146,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8C2F20131FB1DBC600892CC5 /* Sources */ = {
+		8C15BA431FB1F9C70082BD05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C2F201D1FB1DBC600892CC5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C2F20271FB1DBC600892CC5 /* DeliciousSwiftTests.swift in Sources */,
+				8C15BA561FB1FC3D0082BD05 /* Log.swift in Sources */,
+				8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */,
+				8C15BA581FB1FCBA0082BD05 /* Strings.swift in Sources */,
+				8C15BA541FB1F9D30082BD05 /* Files.swift in Sources */,
+				8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */,
+				8C15BA5A1FB1FE320082BD05 /* Dialogs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		8C2F20241FB1DBC600892CC5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8C2F20171FB1DBC600892CC5 /* DeliciousSwift */;
-			targetProxy = 8C2F20231FB1DBC600892CC5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		8C2F202A1FB1DBC600892CC5 /* Debug */ = {
+		8C15BA4E1FB1F9C70082BD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		8C2F202B1FB1DBC600892CC5 /* Release */ = {
+		8C15BA4F1FB1F9C70082BD05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,9 +274,10 @@
 			};
 			name = Release;
 		};
-		8C2F202D1FB1DBC600892CC5 /* Debug */ = {
+		8C15BA511FB1F9C70082BD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -348,13 +293,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		8C2F202E1FB1DBC600892CC5 /* Release */ = {
+		8C15BA521FB1F9C70082BD05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -370,34 +317,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		8C2F20301FB1DBC600892CC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R8BYM8P26B;
-				INFOPLIST_FILE = DeliciousSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		8C2F20311FB1DBC600892CC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R8BYM8P26B;
-				INFOPLIST_FILE = DeliciousSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -405,34 +324,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C2F20121FB1DBC600892CC5 /* Build configuration list for PBXProject "DeliciousSwift" */ = {
+		8C15BA421FB1F9C70082BD05 /* Build configuration list for PBXProject "DeliciousSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C2F202A1FB1DBC600892CC5 /* Debug */,
-				8C2F202B1FB1DBC600892CC5 /* Release */,
+				8C15BA4E1FB1F9C70082BD05 /* Debug */,
+				8C15BA4F1FB1F9C70082BD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C2F202C1FB1DBC600892CC5 /* Build configuration list for PBXNativeTarget "DeliciousSwift" */ = {
+		8C15BA501FB1F9C70082BD05 /* Build configuration list for PBXNativeTarget "DeliciousSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C2F202D1FB1DBC600892CC5 /* Debug */,
-				8C2F202E1FB1DBC600892CC5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8C2F202F1FB1DBC600892CC5 /* Build configuration list for PBXNativeTarget "DeliciousSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C2F20301FB1DBC600892CC5 /* Debug */,
-				8C2F20311FB1DBC600892CC5 /* Release */,
+				8C15BA511FB1F9C70082BD05 /* Debug */,
+				8C15BA521FB1F9C70082BD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8C2F200F1FB1DBC600892CC5 /* Project object */;
+	rootObject = 8C15BA3F1FB1F9C70082BD05 /* Project object */;
 }
