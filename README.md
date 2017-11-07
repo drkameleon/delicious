@@ -4,7 +4,8 @@
 <h1>Delicious.swift</h1>
 
 ### All the little things you've been missing in Swift   
-<br/>   
+
+----- 
 
 ![Language](https://img.shields.io/badge/Language-Swift-orange.svg?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-iOS%20%2F%20macOS-lightgrey.svg?style=flat-square) [![HitCount](http://hits.dwyl.io/drkameleon/delicious.svg)](http://hits.dwyl.io/drkameleon/delicious)
 
@@ -26,6 +27,8 @@ Just drag'n'drop all of the sources in the `DeliciousSwift/DeliciousSwift` folde
 #### Via Carthage/CocoaPods
 
 Pending... :)
+
+-----
 
 ### Copyright & License (and other boring legal stuff)
 
