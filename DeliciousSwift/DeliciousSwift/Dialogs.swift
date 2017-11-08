@@ -107,12 +107,12 @@ func saveDialog(handler: @escaping (String)->Void, otherwise: @escaping ()->Void
     
     if sheet {
         panel.beginSheetModal(for: NSApplication.shared.mainWindow!, completionHandler: {(response) in
-            response.rawValue == NSApplication.ModalResponse.OK ? handler(panel.url!.path)
+            response == .OK ? handler(panel.url!.path)
                 : otherwise()
             
         })
     } else {
-        panel.runModal().rawValue == NSApplication.ModalResponse.OK ? handler(panel.url!.path)
+        panel.runModal() == .OK ? handler(panel.url!.path)
             : otherwise()
     }
 }
