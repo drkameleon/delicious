@@ -30,9 +30,9 @@ Pending... :)
 
 -----
 
-### Reference
+<br/>
 
-#### Arrays
+### Arrays
 Method | Description | Definition
 -------|-------------|------------
 **removeDuplicates**|Removes duplicates from array|`() -> [Element]`
@@ -46,17 +46,26 @@ Method | Description | Definition
 **product**|Calculates the product of an array of numbers|`() -> Int`
 **sum**|Calculates the sum of an array of numbers|`() -> Int`
 
-#### Booleans
+
+<br/>
+
+### Booleans
 Method | Description | Definition
 -------|-------------|------------
 **negate**|Negates/Toggles boolean value|`() -> Bool`
 
-#### Colors
+
+<br/>
+
+### Colors
 Method | Description | Definition
 -------|-------------|------------
 **init**|Creates an NSColor instance from a hex value|`(hex: Int)`
 
-#### Dates
+
+<br/>
+
+### Dates
 Method | Description | Definition
 -------|-------------|------------
 **isPast**|Check if date is in the past|`() -> Bool`
@@ -69,7 +78,10 @@ Method | Description | Definition
 **secondsUntil**|Returns difference with given date in seconds|`(date: Date) -> Int`
 **daysUntil**|Returns difference with given date in days|`(date: Date) -> Int`
 
-#### Dialogs
+
+<br/>
+
+### Dialogs
 Method | Description | Definition
 -------|-------------|------------
 **alertDialog**|Displays alert dialog/sheet|`(_ message: String, info: String, handler: @escaping ()->Void, style: NSAlert.Style = .informational, sheet: Bool = true)`
@@ -77,14 +89,20 @@ Method | Description | Definition
 **openDialog**|Displays Open dialog/sheet|`(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = }, files: Bool = true, filetypes: [String] = [], directories: Bool = false, multiple: Bool = true, hidden: Bool = true, sheet: Bool = true)`
 **saveDialog**|Displays Save dialog/sheet|`(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = }, filetypes: [String] = [], sheet: Bool = true)`
 
-#### Dictionaries
+
+<br/>
+
+### Dictionaries
 Method | Description | Definition
 -------|-------------|------------
 **mergeWith**|Merges given dictionary into dictionary and returns result|`(_ dictionary: Dictionary) -> Dictionary`
 **toTupleArray**|Convers dictionary to array of tuples|`() -> [(Any,Any)]`
 **toJson**|Convers dictionary to Json string|`(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
 
-#### Files
+
+<br/>
+
+### Files
 Method | Description | Definition
 -------|-------------|------------
 **fileExists**|Checks if file in path exists|`() -> Bool`
@@ -99,12 +117,18 @@ Method | Description | Definition
 **pathFolder**|Extracts folder from path|`() -> String`
 **pathContents**|Gets folder contents from path|`() -> [String]?`
 
-#### Floats
+
+<br/>
+
+### Floats
 Method | Description | Definition
 -------|-------------|------------
 **formatDecimal**|Formats number with given number of decimal places|`(_ decimalPlaces: Int) -> String`
 
-#### Integers
+
+<br/>
+
+### Integers
 Method | Description | Definition
 -------|-------------|------------
 **random**|Generates random number|`() -> Int`
@@ -113,17 +137,26 @@ Method | Description | Definition
 **power**|Calculates the xth power of the given number|`(_ x: Int) -> Decimal`
 **square**|Calculates the square of the given number|`() -> Decimal`
 
-#### Log
+
+<br/>
+
+### Log
 Method | Description | Definition
 -------|-------------|------------
 **printLog**|Prints message to log|`(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function)`
 
-#### Plists
+
+<br/>
+
+### Plists
 Method | Description | Definition
 -------|-------------|------------
 **plistToDictionary**|Creates dictionary from Property List (XML) string|`(encoding: String.Encoding = .utf8) -> [String : Any]?`
 
-#### Strings
+
+<br/>
+
+### Strings
 Method | Description | Definition
 -------|-------------|------------
 **subscript**|Gets/sets string characters at given index|`(index: Int) -> String`
@@ -147,10 +180,16 @@ Method | Description | Definition
 **padLeft**|Adds space padding to left of string until fixed size is reached|`(_ size: Int) -> String`
 **padRight**|Adds space padding to right of string until fixed size is reached|`(_ size: Int) -> String`
 
-#### Tasks
+
+<br/>
+
+### Tasks
 Method | Description | Definition
 -------|-------------|------------
 **executeTerminal**|Executes terminal command (a)synchronously|`(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true)`
+
+
+<br/>
 
 -----
 
