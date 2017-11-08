@@ -35,16 +35,16 @@ Pending... :)
 ### Arrays
 Method | Description | Definition
 -------|-------------|------------
-**removeDuplicates**|Removes duplicates from array|`() -> [Element]`
-**removeByValue**|Removes element from array by value|`(_ v: Element) -> [Element]`
-**shuffle**|Shuffles array|`() -> [Element]`
-**randomElement**|Returns random element from array|`() -> Element`
-**findValue**|Searches for value in array and returns array of indexes|`(_ v: Element) -> [Int]`
-**toJson**|Convers array to Json string|`(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
-**average**|Calculates the average of an array of numbers|`() -> Double`
-**median**|Calculates the median of an array of numbers|`() -> Double`
-**product**|Calculates the product of an array of numbers|`() -> Int`
-**sum**|Calculates the sum of an array of numbers|`() -> Int`
+**removeDuplicates** | Removes duplicates from array | `() -> [Element]`
+**removeByValue** | Removes element from array by value | `(_ v: Element) -> [Element]`
+**shuffle** | Shuffles array | `() -> [Element]`
+**randomElement** | Returns random element from array | `() -> Element`
+**findValue** | Searches for value in array and returns array of indexes | `(_ v: Element) -> [Int]`
+**toJson** | Convers array to Json string | `(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
+**average** | Calculates the average of an array of numbers | `() -> Double`
+**median** | Calculates the median of an array of numbers | `() -> Double`
+**product** | Calculates the product of an array of numbers | `() -> Int`
+**sum** | Calculates the sum of an array of numbers | `() -> Int`
 
 
 <br/>
@@ -52,7 +52,7 @@ Method | Description | Definition
 ### Booleans
 Method | Description | Definition
 -------|-------------|------------
-**negate**|Negates/Toggles boolean value|`() -> Bool`
+**negate** | Negates/Toggles boolean value | `() -> Bool`
 
 
 <br/>
@@ -60,7 +60,7 @@ Method | Description | Definition
 ### Colors
 Method | Description | Definition
 -------|-------------|------------
-**init**|Creates an NSColor instance from a hex value|`(hex: Int)`
+**init** | Creates an NSColor instance from a hex value | `(hex: Int)`
 
 
 <br/>
@@ -68,15 +68,15 @@ Method | Description | Definition
 ### Dates
 Method | Description | Definition
 -------|-------------|------------
-**isPast**|Check if date is in the past|`() -> Bool`
-**isFuture**|Checks if date is in the future|`() -> Bool`
-**isToday**|Checks if date is today|`() -> Bool`
-**day**|Returns day from date|`() -> Int`
-**month**|Returns month from date|`() -> Int`
-**monthName**|Returns month from date|`() -> String`
-**year**|Returns year from date|`() -> Int`
-**secondsUntil**|Returns difference with given date in seconds|`(date: Date) -> Int`
-**daysUntil**|Returns difference with given date in days|`(date: Date) -> Int`
+**isPast** | Check if date is in the past | `() -> Bool`
+**isFuture** | Checks if date is in the future | `() -> Bool`
+**isToday** | Checks if date is today | `() -> Bool`
+**day** | Returns day from date | `() -> Int`
+**month** | Returns month from date | `() -> Int`
+**monthName** | Returns month from date | `() -> String`
+**year** | Returns year from date | `() -> Int`
+**secondsUntil** | Returns difference with given date in seconds | `(date: Date) -> Int`
+**daysUntil** | Returns difference with given date in days | `(date: Date) -> Int`
 
 
 <br/>
@@ -84,10 +84,10 @@ Method | Description | Definition
 ### Dialogs
 Method | Description | Definition
 -------|-------------|------------
-**alertDialog**|Displays alert dialog/sheet|`(_ message: String, info: String, handler: @escaping ()->Void, style: NSAlert.Style = .informational, sheet: Bool = true)`
-**confirmationDialog**|Displays confirmation dialog/sheet|`(_ message: String, info: String, handler: @escaping (Bool)->Void, first: String = "OK", second: String = "Cancel", style: NSAlert.Style = .informational, sheet: Bool = true)`
-**openDialog**|Displays Open dialog/sheet|`(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = }, files: Bool = true, filetypes: [String] = [], directories: Bool = false, multiple: Bool = true, hidden: Bool = true, sheet: Bool = true)`
-**saveDialog**|Displays Save dialog/sheet|`(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = }, filetypes: [String] = [], sheet: Bool = true)`
+**alertDialog** | Displays alert dialog/sheet | `(_ message: String, info: String, handler: @escaping ()->Void, style: NSAlert.Style = .informational, sheet: Bool = true)`
+**confirmationDialog** | Displays confirmation dialog/sheet | `(_ message: String, info: String, handler: @escaping (Bool)->Void, first: String = "OK", second: String = "Cancel", style: NSAlert.Style = .informational, sheet: Bool = true)`
+**openDialog** | Displays Open dialog/sheet | `(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = }, files: Bool = true, filetypes: [String] = [], directories: Bool = false, multiple: Bool = true, hidden: Bool = true, sheet: Bool = true)`
+**saveDialog** | Displays Save dialog/sheet | `(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = }, filetypes: [String] = [], sheet: Bool = true)`
 
 
 <br/>
@@ -95,9 +95,9 @@ Method | Description | Definition
 ### Dictionaries
 Method | Description | Definition
 -------|-------------|------------
-**mergeWith**|Merges given dictionary into dictionary and returns result|`(_ dictionary: Dictionary) -> Dictionary`
-**toTupleArray**|Convers dictionary to array of tuples|`() -> [(Any,Any)]`
-**toJson**|Convers dictionary to Json string|`(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
+**mergeWith** | Merges given dictionary into dictionary and returns result | `(_ dictionary: Dictionary) -> Dictionary`
+**toTupleArray** | Convers dictionary to array of tuples | `() -> [(Any,Any)]`
+**toJson** | Convers dictionary to Json string | `(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
 
 
 <br/>
@@ -105,17 +105,17 @@ Method | Description | Definition
 ### Files
 Method | Description | Definition
 -------|-------------|------------
-**fileExists**|Checks if file in path exists|`() -> Bool`
-**isFolder**|Check if path is folder|`() -> Bool`
-**copyFileTo**|Copies file at path to given path|`(_ path: String) -> Void`
-**moveFileTo**|Moves file at path to given path|`(_ path: String) -> Void`
-**renameFileAs**|Renames file at path as new path|`(_ path: String) -> Void`
-**deleteFile**|Deletes file at path|`() -> Void`
-**createAsFolder**|Creates folder from path|`() -> Void`
-**pathExtension**|Extracts extension from path|`() -> String`
-**pathFilename**|Extracts filename from path|`() -> String`
-**pathFolder**|Extracts folder from path|`() -> String`
-**pathContents**|Gets folder contents from path|`() -> [String]?`
+**fileExists** | Checks if file in path exists | `() -> Bool`
+**isFolder** | Check if path is folder | `() -> Bool`
+**copyFileTo** | Copies file at path to given path | `(_ path: String) -> Void`
+**moveFileTo** | Moves file at path to given path | `(_ path: String) -> Void`
+**renameFileAs** | Renames file at path as new path | `(_ path: String) -> Void`
+**deleteFile** | Deletes file at path | `() -> Void`
+**createAsFolder** | Creates folder from path | `() -> Void`
+**pathExtension** | Extracts extension from path | `() -> String`
+**pathFilename** | Extracts filename from path | `() -> String`
+**pathFolder** | Extracts folder from path | `() -> String`
+**pathContents** | Gets folder contents from path | `() -> [String]?`
 
 
 <br/>
@@ -123,7 +123,7 @@ Method | Description | Definition
 ### Floats
 Method | Description | Definition
 -------|-------------|------------
-**formatDecimal**|Formats number with given number of decimal places|`(_ decimalPlaces: Int) -> String`
+**formatDecimal** | Formats number with given number of decimal places | `(_ decimalPlaces: Int) -> String`
 
 
 <br/>
@@ -131,11 +131,11 @@ Method | Description | Definition
 ### Integers
 Method | Description | Definition
 -------|-------------|------------
-**random**|Generates random number|`() -> Int`
-**padWithZeros**|Adds left padding with zeros to number|`(_ zerosCount: Int) -> String`
-**factorial**|Calculates the nth factorial|`() -> Int`
-**power**|Calculates the xth power of the given number|`(_ x: Int) -> Decimal`
-**square**|Calculates the square of the given number|`() -> Decimal`
+**random** | Generates random number | `() -> Int`
+**padWithZeros** | Adds left padding with zeros to number | `(_ zerosCount: Int) -> String`
+**factorial** | Calculates the nth factorial | `() -> Int`
+**power** | Calculates the xth power of the given number | `(_ x: Int) -> Decimal`
+**square** | Calculates the square of the given number | `() -> Decimal`
 
 
 <br/>
@@ -143,7 +143,7 @@ Method | Description | Definition
 ### Log
 Method | Description | Definition
 -------|-------------|------------
-**printLog**|Prints message to log|`(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function)`
+**printLog** | Prints message to log | `(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function)`
 
 
 <br/>
@@ -151,7 +151,7 @@ Method | Description | Definition
 ### Plists
 Method | Description | Definition
 -------|-------------|------------
-**plistToDictionary**|Creates dictionary from Property List (XML) string|`(encoding: String.Encoding = .utf8) -> [String : Any]?`
+**plistToDictionary** | Creates dictionary from Property List (XML) string | `(encoding: String.Encoding = .utf8) -> [String : Any]?`
 
 
 <br/>
@@ -159,26 +159,26 @@ Method | Description | Definition
 ### Strings
 Method | Description | Definition
 -------|-------------|------------
-**subscript**|Gets/sets string characters at given index|`(index: Int) -> String`
-**subscript**|Gets/sets substring at given range|`(range: CountableClosedRange<Int>) -> String`
-**subscript**|Gets/sets substring at given range|`(range: CountableRange<Int>) -> String`
-**static -**|Removes all occurences of given string within string|`(left: String, right: String) -> String`
-**static ***|Repeats string a given number of times|`(left: String, right: Int) -> String`
-**static /**|Splits string by given separator|`(left: String, right: String) -> [String]`
-**static unique**|Generate unique identifier string|`() -> String`
-**writeToFile**|Writes string to given path|`(_ path: String, encoding: String.Encoding = .utf8) -> Void`
-**beginsWith**|Checks if string begins with given string|`(_ s: String) -> Bool`
-**endsWith**|Checks if string ends with given string|`(_ s: String) -> Bool`
-**replace**|Replaces substring in string with given string|`(_ what: String, with: String) -> String`
-**replaceRegex**|Replaces regular expression in string with given string|`(_ what: String, with: String) -> String`
-**containsRegex**|Checks if string contains regular expression|`(_ r: String) -> Bool`
-**trim**|Trims characters in string|`(_ chars: String) -> String`
-**trimWhitespace**|Trims all whitespace in string|`() -> String`
-**split**|Splits string using given separator string|`(_ separator: String) -> [String]`
-**splitLines**|Splits lines in string|`() -> [String]`
-**splitWords**|Splits words in string|`() -> [String]`
-**padLeft**|Adds space padding to left of string until fixed size is reached|`(_ size: Int) -> String`
-**padRight**|Adds space padding to right of string until fixed size is reached|`(_ size: Int) -> String`
+**subscript** | Gets/sets string characters at given index | `(index: Int) -> String`
+**subscript** | Gets/sets substring at given range | `(range: CountableClosedRange<Int>) -> String`
+**subscript** | Gets/sets substring at given range | `(range: CountableRange<Int>) -> String`
+**\-** | Removes all occurences of given string within string | `static  (left: String, right: String) > String`
+**\*** | Repeats string a given number of times | `static  (left: String, right: Int) -> String`
+**/** | Splits string by given separator | `static  (left: String, right: String) -> [String]`
+**unique** | Generate unique identifier string | `static () -> String`
+**writeToFile** | Writes string to given path | `(_ path: String, encoding: String.Encoding = .utf8) -> Void`
+**beginsWith** | Checks if string begins with given string | `(_ s: String) -> Bool`
+**endsWith** | Checks if string ends with given string | `(_ s: String) -> Bool`
+**replace** | Replaces substring in string with given string | `(_ what: String, with: String) -> String`
+**replaceRegex** | Replaces regular expression in string with given string | `(_ what: String, with: String) -> String`
+**containsRegex** | Checks if string contains regular expression | `(_ r: String) -> Bool`
+**trim** | Trims characters in string | `(_ chars: String) -> String`
+**trimWhitespace** | Trims all whitespace in string | `() -> String`
+**split** | Splits string using given separator string | `(_ separator: String) -> [String]`
+**splitLines** | Splits lines in string | `() -> [String]`
+**splitWords** | Splits words in string | `() -> [String]`
+**padLeft** | Adds space padding to left of string until fixed size is reached | `(_ size: Int) -> String`
+**padRight** | Adds space padding to right of string until fixed size is reached | `(_ size: Int) -> String`
 
 
 <br/>
@@ -186,7 +186,7 @@ Method | Description | Definition
 ### Tasks
 Method | Description | Definition
 -------|-------------|------------
-**executeTerminal**|Executes terminal command (a)synchronously|`(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true)`
+**executeTerminal** | Executes terminal command (a)synchronously | `(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true)`
 
 
 <br/>
