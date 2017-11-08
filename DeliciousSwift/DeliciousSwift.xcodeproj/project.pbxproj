@@ -22,6 +22,7 @@
 		8CEAC5031FB326AF0077475E /* Plists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5021FB326AF0077475E /* Plists.swift */; };
 		8CEAC5051FB32E1A0077475E /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5041FB32E1A0077475E /* Dates.swift */; };
 		8CEAC5211FB3434F0077475E /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5201FB3434F0077475E /* Algorithms.swift */; };
+		8CEAC5231FB347D70077475E /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5221FB347D60077475E /* HTTP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8CEAC5021FB326AF0077475E /* Plists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plists.swift; sourceTree = "<group>"; };
 		8CEAC5041FB32E1A0077475E /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		8CEAC5201FB3434F0077475E /* Algorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
+		8CEAC5221FB347D60077475E /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				8CEAC5001FB3251E0077475E /* Dictionaries.swift */,
 				8C15BA531FB1F9D30082BD05 /* Files.swift */,
 				8CEAC4FC1FB3139A0077475E /* Floats.swift */,
+				8CEAC5221FB347D60077475E /* HTTP.swift */,
 				8CEAC4FE1FB3142F0077475E /* Integers.swift */,
 				8C15BA551FB1FC3D0082BD05 /* Log.swift */,
 				8CEAC5021FB326AF0077475E /* Plists.swift */,
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEAC5231FB347D70077475E /* HTTP.swift in Sources */,
 				8CEAC4FF1FB3142F0077475E /* Integers.swift in Sources */,
 				8CEAC4FD1FB3139A0077475E /* Floats.swift in Sources */,
 				8C15BA561FB1FC3D0082BD05 /* Log.swift in Sources */,
