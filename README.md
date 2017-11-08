@@ -42,6 +42,19 @@ Pending... :)
 
 <br/>
 
+### Algorithms
+Method | Description | Definition
+-------|-------------|------------
+**linearSearch** | Linear search algorithm | `(_ search: T, in items: [T]) -> Int?`
+**binarySearch** | Binary search algorithm | `(_ search: T, in items: [T], from: Int, to: Int) -> Int?`
+**binarySearch** | Binary search algorithm | `(_ search: T, in items: [T]) -> Int?`
+**bubbleSort** | Bubble sort algorithm | `(_ items: [T]) -> [T]`
+**insertionSort** | Insertion sort algorithm | `(_ items:[T]) -> [T]`
+**quickSort** | QuickSort sort algorithm | `(_ items:[T]) -> [T]`
+
+
+<br/>
+
 ### Arrays
 Method | Description | Definition
 -------|-------------|------------
@@ -134,6 +147,14 @@ Method | Description | Definition
 Method | Description | Definition
 -------|-------------|------------
 **formatDecimal** | Formats number with given number of decimal places | `(_ decimalPlaces: Int) -> String`
+
+
+<br/>
+
+### HTTP
+Method | Description | Definition
+-------|-------------|------------
+**makeHTTPRequest** | Makes an HTTP request | `(_ address: String, method: String = "GET", body: String = "",`
 
 
 <br/>
