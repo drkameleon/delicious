@@ -38,13 +38,36 @@ Method | Description | Definition
 **removeDuplicates**|Removes duplicates from array|`() -> [Element]`
 **removeByValue**|Removes element from array by value|`(_ v: Element) -> [Element]`
 **shuffle**|Shuffles array|`() -> [Element]`
-**randomElement**|Return random element from array|`() -> Element`
-**findValue**|Search for value in array and returns array of indexes|`(_ v: Element) -> [Int]`
+**randomElement**|Returns random element from array|`() -> Element`
+**findValue**|Searches for value in array and returns array of indexes|`(_ v: Element) -> [Int]`
+**toJson**|Convers array to Json string|`(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
+**average**|Calculates the average of an array of numbers|`() -> Double`
+**median**|Calculates the median of an array of numbers|`() -> Double`
+**product**|Calculates the product of an array of numbers|`() -> Int`
+**sum**|Calculates the sum of an array of numbers|`() -> Int`
+
+#### Booleans.swift
+Method | Description | Definition
+-------|-------------|------------
+**negate**|Negates/Toggles boolean value|`() -> Bool`
 
 #### Colors.swift
 Method | Description | Definition
 -------|-------------|------------
 **init**|Creates an NSColor instance from a hex value|`(hex: Int)`
+
+#### Dates.swift
+Method | Description | Definition
+-------|-------------|------------
+**isPast**|Check if date is in the past|`() -> Bool`
+**isFuture**|Checks if date is in the future|`() -> Bool`
+**isToday**|Checks if date is today|`() -> Bool`
+**day**|Returns day from date|`() -> Int`
+**month**|Returns month from date|`() -> Int`
+**monthName**|Returns month from date|`() -> String`
+**year**|Returns year from date|`() -> Int`
+**secondsUntil**|Returns difference with given date in seconds|`(date: Date) -> Int`
+**daysUntil**|Returns difference with given date in days|`(date: Date) -> Int`
 
 #### Dialogs.swift
 Method | Description | Definition
@@ -53,6 +76,13 @@ Method | Description | Definition
 **confirmationDialog**|Displays confirmation dialog/sheet|`(_ message: String, info: String, handler: @escaping (Bool)->Void, first: String = "OK", second: String = "Cancel", style: NSAlert.Style = .informational, sheet: Bool = true)`
 **openDialog**|Displays Open dialog/sheet|`(handler: @escaping ([String])->Void, otherwise: @escaping ()->Void = }, files: Bool = true, filetypes: [String] = [], directories: Bool = false, multiple: Bool = true, hidden: Bool = true, sheet: Bool = true)`
 **saveDialog**|Displays Save dialog/sheet|`(handler: @escaping (String)->Void, otherwise: @escaping ()->Void = }, filetypes: [String] = [], sheet: Bool = true)`
+
+#### Dictionaries.swift
+Method | Description | Definition
+-------|-------------|------------
+**mergeWith**|Merges given dictionary into dictionary and returns result|`(_ dictionary: Dictionary) -> Dictionary`
+**toTupleArray**|Convers dictionary to array of tuples|`() -> [(Any,Any)]`
+**toJson**|Convers dictionary to Json string|`(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String?`
 
 #### Files.swift
 Method | Description | Definition
@@ -69,14 +99,40 @@ Method | Description | Definition
 **pathFolder**|Extracts folder from path|`() -> String`
 **pathContents**|Gets folder contents from path|`() -> [String]?`
 
+#### Floats.swift
+Method | Description | Definition
+-------|-------------|------------
+**formatDecimal**|Formats number with given number of decimal places|`(_ decimalPlaces: Int) -> String`
+
+#### Integers.swift
+Method | Description | Definition
+-------|-------------|------------
+**random**|Generates random number|`() -> Int`
+**padWithZeros**|Adds left padding with zeros to number|`(_ zerosCount: Int) -> String`
+**factorial**|Calculates the nth factorial|`() -> Int`
+**power**|Calculates the xth power of the given number|`(_ x: Int) -> Decimal`
+**square**|Calculates the square of the given number|`() -> Decimal`
+
 #### Log.swift
 Method | Description | Definition
 -------|-------------|------------
 **printLog**|Prints message to log|`(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function)`
 
+#### Plists.swift
+Method | Description | Definition
+-------|-------------|------------
+**plistToDictionary**|Creates dictionary from Property List (XML) string|`(encoding: String.Encoding = .utf8) -> [String : Any]?`
+
 #### Strings.swift
 Method | Description | Definition
 -------|-------------|------------
+**subscript**|Gets/sets string characters at given index|`(index: Int) -> String`
+**subscript**|Gets/sets substring at given range|`(range: CountableClosedRange<Int>) -> String`
+**subscript**|Gets/sets substring at given range|`(range: CountableRange<Int>) -> String`
+**static -**|Removes all occurences of given string within string|`(left: String, right: String) -> String`
+**static ***|Repeats string a given number of times|`(left: String, right: Int) -> String`
+**static /**|Splits string by given separator|`(left: String, right: String) -> [String]`
+**static unique**|Generate unique identifier string|`() -> String`
 **writeToFile**|Writes string to given path|`(_ path: String, encoding: String.Encoding = .utf8) -> Void`
 **beginsWith**|Checks if string begins with given string|`(_ s: String) -> Bool`
 **endsWith**|Checks if string ends with given string|`(_ s: String) -> Bool`
@@ -86,7 +142,10 @@ Method | Description | Definition
 **trim**|Trims characters in string|`(_ chars: String) -> String`
 **trimWhitespace**|Trims all whitespace in string|`() -> String`
 **split**|Splits string using given separator string|`(_ separator: String) -> [String]`
+**splitLines**|Splits lines in string|`() -> [String]`
 **splitWords**|Splits words in string|`() -> [String]`
+**padLeft**|Adds space padding to left of string until fixed size is reached|`(_ size: Int) -> String`
+**padRight**|Adds space padding to right of string until fixed size is reached|`(_ size: Int) -> String`
 
 #### Tasks.swift
 Method | Description | Definition
