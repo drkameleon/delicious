@@ -13,7 +13,7 @@
 
 import Foundation
 
-extension Array where Element: Hashable {
+public extension Array where Element: Hashable {
     
     /**
      Removes duplicates from array
