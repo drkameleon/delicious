@@ -162,10 +162,10 @@ Method | Description | Definition
 **subscript** | Gets/sets string characters at given index | `(index: Int) -> String`
 **subscript** | Gets/sets substring at given range | `(range: CountableClosedRange<Int>) -> String`
 **subscript** | Gets/sets substring at given range | `(range: CountableRange<Int>) -> String`
-**\-** | Removes all occurences of given string within string | `static  (left: String, right: String) > String`
-**\*** | Repeats string a given number of times | `static  (left: String, right: Int) -> String`
-**/** | Splits string by given separator | `static  (left: String, right: String) -> [String]`
-**unique** | Generate unique identifier string | `static () -> String`
+**\-** | Removes all occurences of given string within string | `(left: String, right: String) > String`
+**\*** | Repeats string a given number of times | `(left: String, right: Int) -> String`
+**/** | Splits string by given separator | `(left: String, right: String) -> [String]`
+**unique** | Generate unique identifier string | `() -> String`
 **writeToFile** | Writes string to given path | `(_ path: String, encoding: String.Encoding = .utf8) -> Void`
 **beginsWith** | Checks if string begins with given string | `(_ s: String) -> Bool`
 **endsWith** | Checks if string ends with given string | `(_ s: String) -> Bool`
