@@ -30,6 +30,42 @@ public extension String {
     }
     
     /**
+     Gets/sets substring at given range
+     */
+    subscript (range: CountableClosedRange<Int>) -> String {
+        get {
+            let ind_start = self.index(self.startIndex, offsetBy: range.first!)
+            let ind_end = self.index(self.startIndex, offsetBy: range.last!)
+            
+            return String(self[ind_start...ind_end])
+        }
+        set {
+            let ind_start = self.index(self.startIndex, offsetBy: range.first!)
+            let ind_end = self.index(self.startIndex, offsetBy: range.last!)
+            
+            self.replaceSubrange(ind_start...ind_end, with: newValue)
+        }
+    }
+    
+    /**
+     Gets/sets substring at given range
+     */
+    subscript (range: CountableRange<Int>) -> String {
+        get {
+            let ind_start = self.index(self.startIndex, offsetBy: range.first!)
+            let ind_end = self.index(self.startIndex, offsetBy: range.last!)
+            
+            return String(self[ind_start..<ind_end])
+        }
+        set {
+            let ind_start = self.index(self.startIndex, offsetBy: range.first!)
+            let ind_end = self.index(self.startIndex, offsetBy: range.last!)
+            
+            self.replaceSubrange(ind_start..<ind_end, with: newValue)
+        }
+    }
+    
+    /**
      Removes all occurences of given string within string
      */
     static func - (left: String, right: String) -> String {
@@ -125,6 +161,13 @@ public extension String {
      */
     func split(_ separator: String) -> [String] {
         return self.components(separatedBy: separator)
+    }
+    
+    /**
+     Splits lines in string
+     */
+    func splitLines() -> [String] {
+        return self.split("\n")
     }
     
     /**

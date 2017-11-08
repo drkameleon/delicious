@@ -48,14 +48,14 @@ public extension Array where Element: Hashable {
     }
     
     /**
-     Return random element from array
+     Returns random element from array
      */
     func randomElement() -> Element {
         return self[Int(arc4random()) % self.count]
     }
     
     /**
-     Search for value in array and returns array of indexes
+     Searches for value in array and returns array of indexes
      */
     func findValue(_ v: Element) -> [Int] {
         var indexes: [Int] = []
@@ -68,4 +68,56 @@ public extension Array where Element: Hashable {
         
         return indexes
     }
+    
+    /**
+     Convers array to Json string
+     */
+    func toJson(pretty: Bool = false, encoding: String.Encoding = .utf8) -> String? {
+        do {
+            let options : JSONSerialization.WritingOptions = pretty ? [.prettyPrinted] : []
+            let json = try JSONSerialization.data(withJSONObject: self, options: options)
+
+            return String(data: json, encoding: encoding)
+        }
+        catch let error {
+            printLog(error, error: true)
+            return nil
+        }
+    }
+    
+}
+
+public extension Array where Element == Int {
+    
+    /**
+     Calculates the average of an array of numbers
+     */
+    func average() -> Double {
+        return Double(self.reduce(0,+)) / Double(self.count)
+    }
+    
+    /**
+     Calculates the median of an array of numbers
+     */
+    func median() -> Double {
+        let sorted = self.sorted()
+        
+        return sorted.count % 2 == 1 ? Double(sorted[sorted.count/2])
+                                     : Double(sorted[sorted.count/2-1] + sorted[sorted.count/2]) / 2.0
+    }
+
+    /**
+     Calculates the product of an array of numbers
+     */
+    func product() -> Int {
+        return self.reduce(1,*)
+    }
+    
+    /**
+     Calculates the sum of an array of numbers
+     */
+    func sum() -> Int {
+        return self.reduce(0,+)
+    }
+    
 }
