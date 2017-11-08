@@ -24,7 +24,17 @@ Just drag'n'drop all of the sources in the `DeliciousSwift/DeliciousSwift` folde
 5. Under **Build Settings**, go to **Framework Search Paths** and add the location of the `DeliciousSwift.framework` you just compiled
 6. `import DeliciousSwift` in any over your Swift files and you're ready to go
 
-#### Via Carthage/CocoaPods
+#### Via Dependency Manager
+
+##### Carthage (macOS 10.9+)
+
+You can use [Carthage](https://github.com/Carthage/Carthage) to install `DeliciousSwift` by adding it to your `Cartfile`:
+
+```
+github "drkameleon/delicious"
+```
+
+##### CocoaPods
 
 Pending... :)
 
