@@ -16,6 +16,48 @@ import Foundation
 public extension String {
     
     /**
+     Gets/sets string characters at given index
+     */
+    subscript (index: Int) -> String {
+        get {
+            let ind = self.index(self.startIndex, offsetBy: index)
+            return String(self[ind])
+        }
+        set {
+            let ind = self.index(self.startIndex, offsetBy: index)
+            self.replaceSubrange(ind...ind, with: newValue)
+        }
+    }
+    
+    /**
+     Removes all occurences of given string within string
+     */
+    static func - (left: String, right: String) -> String {
+        return left.replace(right, with: "")
+    }
+    
+    /**
+     Repeats string a given number of times
+     */
+    static func * (left: String, right: Int) -> String {
+        return String(repeating: left, count: right)
+    }
+    
+    /**
+     Splits string by given separator
+     */
+    static func / (left: String, right: String) -> [String] {
+        return left.split(right)
+    }
+    
+    /**
+     Generate unique identifier string
+     */
+    static func unique() -> String {
+        return UUID().uuidString
+    }
+    
+    /**
      Writes string to given path
      */
     func writeToFile(_ path: String, encoding: String.Encoding = .utf8) -> Void {
@@ -101,6 +143,20 @@ public extension String {
         }
         
         return words
+    }
+    
+    /**
+     Adds space padding to left of string until fixed size is reached
+     */
+    func padLeft(_ size: Int) -> String {
+        return String(repeating: " ", count: size - self.count) + self
+    }
+    
+    /**
+     Adds space padding to right of string until fixed size is reached
+     */
+    func padRight(_ size: Int) -> String {
+        return self.padding(toLength: size, withPad: " ", startingAt: 0)
     }
     
 }
