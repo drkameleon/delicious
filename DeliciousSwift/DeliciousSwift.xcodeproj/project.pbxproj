@@ -15,6 +15,7 @@
 		8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5B1FB1FEA60082BD05 /* Colors.swift */; };
 		8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5D1FB1FF280082BD05 /* Tasks.swift */; };
 		8C15BA601FB209F90082BD05 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5F1FB209F90082BD05 /* Arrays.swift */; };
+		8CEAC4FB1FB30D220077475E /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FA1FB30D220077475E /* Booleans.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8C15BA5B1FB1FEA60082BD05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8C15BA5D1FB1FF280082BD05 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		8C15BA5F1FB209F90082BD05 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		8CEAC4FA1FB30D220077475E /* Booleans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booleans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */,
 				8C15BA4C1FB1F9C70082BD05 /* Info.plist */,
 				8C15BA5F1FB209F90082BD05 /* Arrays.swift */,
+				8CEAC4FA1FB30D220077475E /* Booleans.swift */,
 				8C15BA5B1FB1FEA60082BD05 /* Colors.swift */,
 				8C15BA591FB1FE320082BD05 /* Dialogs.swift */,
 				8C15BA531FB1F9D30082BD05 /* Files.swift */,
@@ -157,6 +160,7 @@
 				8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */,
 				8C15BA601FB209F90082BD05 /* Arrays.swift in Sources */,
 				8C15BA581FB1FCBA0082BD05 /* Strings.swift in Sources */,
+				8CEAC4FB1FB30D220077475E /* Booleans.swift in Sources */,
 				8C15BA541FB1F9D30082BD05 /* Files.swift in Sources */,
 				8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */,
 				8C15BA5A1FB1FE320082BD05 /* Dialogs.swift in Sources */,
