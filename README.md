@@ -7,7 +7,7 @@
 
 ----- 
 
-![Language](https://img.shields.io/badge/Language-Swift-orange.svg?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-iOS%20%2F%20macOS-lightgrey.svg?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square) [![HitCount](http://hits.dwyl.io/drkameleon/delicious.svg)](http://hits.dwyl.io/drkameleon/delicious)
+![Language](https://img.shields.io/badge/Language-Swift-orange.svg?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-iOS%20%2F%20macOS-lightgrey.svg?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square) ![Build Status](https://img.shields.io/travis/drkameleon/delicious.svg?style=flat-square) [![HitCount](http://hits.dwyl.io/drkameleon/delicious.svg)](http://hits.dwyl.io/drkameleon/delicious)
 
 ### How to include it in your project
 
