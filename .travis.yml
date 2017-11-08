@@ -1,6 +1,4 @@
 language: objective-c
 osx_image: xcode9.1
 
-xcode_project: DeliciousSwift.xcodeproj
-xcode_scheme:
-- DeliciousSwift
+script: xcodebuild clean && xcodebuild build -project DeliciousSwift.xcodeproj -scheme DeliciousSwift
