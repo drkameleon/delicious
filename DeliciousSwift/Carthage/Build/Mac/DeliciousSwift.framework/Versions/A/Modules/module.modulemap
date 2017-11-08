@@ -1,0 +1,11 @@
+framework module DeliciousSwift {
+  umbrella header "DeliciousSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module DeliciousSwift.Swift {
+    header "DeliciousSwift-Swift.h"
+    requires objc
+}
