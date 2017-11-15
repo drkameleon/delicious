@@ -16,7 +16,7 @@ import Foundation
 /**
  Prints message to log
  */
-func printLog(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function) {
+public func printLog(_ obj: Any? = nil, error: Bool = false, _ file : String = #file, _ line : Int = #line, _ function : String = #function) {
     
     let filename = URL(fileURLWithPath:file).lastPathComponent
     var output : String
