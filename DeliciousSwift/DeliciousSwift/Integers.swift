@@ -54,6 +54,4 @@ public extension Int {
         return self.power(2)
     }
     
-    
-    
 }
