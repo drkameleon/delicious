@@ -55,6 +55,39 @@ public extension Array where Element: Hashable {
     }
     
     /**
+    Returns element at given index
+    */
+    func elementAt(_ index: Int) -> Element {
+        return self[index]
+    }
+    
+    /**
+    Returns array of elements at given indexes
+    */
+    func elementsAt(_ indexes: [Int]) -> [Element] {
+        var result : [Element] = []
+        
+        for index in indexes {
+            result += [self[index]]
+        }
+        
+        return result
+    }
+    
+    /**
+    Checks if array contains an array of given elements
+    */
+    func containsAll(_ elements: [Element]) -> Bool {
+        for element in elements {
+            if !self.contains(element) {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    /**
      Searches for value in array and returns array of indexes
      */
     func findValue(_ v: Element) -> [Int] {
