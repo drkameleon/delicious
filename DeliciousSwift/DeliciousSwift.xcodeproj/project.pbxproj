@@ -8,21 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		8C15BA4D1FB1F9C70082BD05 /* DeliciousSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C15BA541FB1F9D30082BD05 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA531FB1F9D30082BD05 /* Files.swift */; };
-		8C15BA561FB1FC3D0082BD05 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA551FB1FC3D0082BD05 /* Log.swift */; };
-		8C15BA581FB1FCBA0082BD05 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA571FB1FCBA0082BD05 /* Strings.swift */; };
-		8C15BA5A1FB1FE320082BD05 /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA591FB1FE320082BD05 /* Dialogs.swift */; };
-		8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5B1FB1FEA60082BD05 /* Colors.swift */; };
-		8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5D1FB1FF280082BD05 /* Tasks.swift */; };
-		8C15BA601FB209F90082BD05 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5F1FB209F90082BD05 /* Arrays.swift */; };
-		8CEAC4FB1FB30D220077475E /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FA1FB30D220077475E /* Booleans.swift */; };
-		8CEAC4FD1FB3139A0077475E /* Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FC1FB3139A0077475E /* Floats.swift */; };
-		8CEAC4FF1FB3142F0077475E /* Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FE1FB3142F0077475E /* Integers.swift */; };
-		8CEAC5011FB3251E0077475E /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5001FB3251E0077475E /* Dictionaries.swift */; };
-		8CEAC5031FB326AF0077475E /* Plists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5021FB326AF0077475E /* Plists.swift */; };
-		8CEAC5051FB32E1A0077475E /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5041FB32E1A0077475E /* Dates.swift */; };
-		8CEAC5211FB3434F0077475E /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5201FB3434F0077475E /* Algorithms.swift */; };
-		8CEAC5231FB347D70077475E /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5221FB347D60077475E /* HTTP.swift */; };
+		8C45F7C11FC468C70004153C /* DeliciousSwiftiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C45F7BF1FC468C70004153C /* DeliciousSwiftiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C45F8071FC46C640004153C /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FA1FB30D220077475E /* Booleans.swift */; };
+		8C45F8081FC46C640004153C /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5041FB32E1A0077475E /* Dates.swift */; };
+		8C45F8091FC46C640004153C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5221FB347D60077475E /* HTTP.swift */; };
+		8C45F80A1FC46C640004153C /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA591FB1FE320082BD05 /* Dialogs.swift */; };
+		8C45F80B1FC46C640004153C /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5001FB3251E0077475E /* Dictionaries.swift */; };
+		8C45F80C1FC46C640004153C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA571FB1FCBA0082BD05 /* Strings.swift */; };
+		8C45F80D1FC46C640004153C /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5D1FB1FF280082BD05 /* Tasks.swift */; };
+		8C45F80E1FC46C640004153C /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5201FB3434F0077475E /* Algorithms.swift */; };
+		8C45F80F1FC46C640004153C /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5F1FB209F90082BD05 /* Arrays.swift */; };
+		8C45F8101FC46C640004153C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA5B1FB1FEA60082BD05 /* Colors.swift */; };
+		8C45F8111FC46C640004153C /* Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FC1FB3139A0077475E /* Floats.swift */; };
+		8C45F8121FC46C640004153C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA551FB1FC3D0082BD05 /* Log.swift */; };
+		8C45F8131FC46C640004153C /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15BA531FB1F9D30082BD05 /* Files.swift */; };
+		8C45F8141FC46C640004153C /* Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FE1FB3142F0077475E /* Integers.swift */; };
+		8C45F8151FC46C640004153C /* Plists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5021FB326AF0077475E /* Plists.swift */; };
+		8C45F8251FC46C730004153C /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8161FC46C710004153C /* Dictionaries.swift */; };
+		8C45F8261FC46C730004153C /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8161FC46C710004153C /* Dictionaries.swift */; };
+		8C45F8271FC46C730004153C /* Plists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8171FC46C710004153C /* Plists.swift */; };
+		8C45F8281FC46C730004153C /* Plists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8171FC46C710004153C /* Plists.swift */; };
+		8C45F8291FC46C730004153C /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8181FC46C710004153C /* Algorithms.swift */; };
+		8C45F82A1FC46C730004153C /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8181FC46C710004153C /* Algorithms.swift */; };
+		8C45F82B1FC46C730004153C /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8191FC46C720004153C /* Tasks.swift */; };
+		8C45F82C1FC46C730004153C /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8191FC46C720004153C /* Tasks.swift */; };
+		8C45F82D1FC46C730004153C /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81A1FC46C720004153C /* Files.swift */; };
+		8C45F82E1FC46C730004153C /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81A1FC46C720004153C /* Files.swift */; };
+		8C45F8311FC46C730004153C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81C1FC46C720004153C /* HTTP.swift */; };
+		8C45F8321FC46C730004153C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81C1FC46C720004153C /* HTTP.swift */; };
+		8C45F8331FC46C730004153C /* Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81D1FC46C720004153C /* Floats.swift */; };
+		8C45F8341FC46C730004153C /* Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81D1FC46C720004153C /* Floats.swift */; };
+		8C45F8351FC46C730004153C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81E1FC46C720004153C /* Strings.swift */; };
+		8C45F8361FC46C730004153C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F81E1FC46C720004153C /* Strings.swift */; };
+		8C45F8391FC46C730004153C /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8201FC46C720004153C /* Booleans.swift */; };
+		8C45F83A1FC46C730004153C /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8201FC46C720004153C /* Booleans.swift */; };
+		8C45F83B1FC46C730004153C /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8211FC46C720004153C /* Dates.swift */; };
+		8C45F83C1FC46C730004153C /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8211FC46C720004153C /* Dates.swift */; };
+		8C45F83D1FC46C730004153C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8221FC46C720004153C /* Log.swift */; };
+		8C45F83E1FC46C730004153C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8221FC46C720004153C /* Log.swift */; };
+		8C45F83F1FC46C730004153C /* Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8231FC46C720004153C /* Integers.swift */; };
+		8C45F8401FC46C730004153C /* Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8231FC46C720004153C /* Integers.swift */; };
+		8C45F8411FC46C730004153C /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8241FC46C730004153C /* Arrays.swift */; };
+		8C45F8421FC46C730004153C /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8241FC46C730004153C /* Arrays.swift */; };
+		8C45F8451FC46D040004153C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8431FC46D030004153C /* Colors.swift */; };
+		8C45F8461FC46D040004153C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8431FC46D030004153C /* Colors.swift */; };
+		8C45F8471FC46D040004153C /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8441FC46D030004153C /* Dialogs.swift */; };
+		8C45F8481FC46D040004153C /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F8441FC46D030004153C /* Dialogs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +67,24 @@
 		8C15BA5B1FB1FEA60082BD05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8C15BA5D1FB1FF280082BD05 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		8C15BA5F1FB209F90082BD05 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		8C45F7BD1FC468C70004153C /* DeliciousSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeliciousSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45F7BF1FC468C70004153C /* DeliciousSwiftiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliciousSwiftiOS.h; sourceTree = "<group>"; };
+		8C45F7C01FC468C70004153C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C45F8161FC46C710004153C /* Dictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionaries.swift; path = DeliciousSwift/Dictionaries.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8171FC46C710004153C /* Plists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plists.swift; path = DeliciousSwift/Plists.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8181FC46C710004153C /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Algorithms.swift; path = DeliciousSwift/Algorithms.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8191FC46C720004153C /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tasks.swift; path = DeliciousSwift/Tasks.swift; sourceTree = SOURCE_ROOT; };
+		8C45F81A1FC46C720004153C /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Files.swift; path = DeliciousSwift/Files.swift; sourceTree = SOURCE_ROOT; };
+		8C45F81C1FC46C720004153C /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTP.swift; path = DeliciousSwift/HTTP.swift; sourceTree = SOURCE_ROOT; };
+		8C45F81D1FC46C720004153C /* Floats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Floats.swift; path = DeliciousSwift/Floats.swift; sourceTree = SOURCE_ROOT; };
+		8C45F81E1FC46C720004153C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = DeliciousSwift/Strings.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8201FC46C720004153C /* Booleans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Booleans.swift; path = DeliciousSwift/Booleans.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8211FC46C720004153C /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dates.swift; path = DeliciousSwift/Dates.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8221FC46C720004153C /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log.swift; path = DeliciousSwift/Log.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8231FC46C720004153C /* Integers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Integers.swift; path = DeliciousSwift/Integers.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8241FC46C730004153C /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arrays.swift; path = DeliciousSwift/Arrays.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8431FC46D030004153C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = DeliciousSwift/Colors.swift; sourceTree = SOURCE_ROOT; };
+		8C45F8441FC46D030004153C /* Dialogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dialogs.swift; path = DeliciousSwift/Dialogs.swift; sourceTree = SOURCE_ROOT; };
 		8CEAC4FA1FB30D220077475E /* Booleans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booleans.swift; sourceTree = "<group>"; };
 		8CEAC4FC1FB3139A0077475E /* Floats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floats.swift; sourceTree = "<group>"; };
 		8CEAC4FE1FB3142F0077475E /* Integers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integers.swift; sourceTree = "<group>"; };
@@ -54,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C45F7B91FC468C70004153C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8C15BA4A1FB1F9C70082BD05 /* DeliciousSwift */,
+				8C45F7BE1FC468C70004153C /* DeliciousSwiftiOS */,
 				8C15BA491FB1F9C70082BD05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				8C15BA481FB1F9C70082BD05 /* DeliciousSwift.framework */,
+				8C45F7BD1FC468C70004153C /* DeliciousSwiftiOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +155,30 @@
 			path = DeliciousSwift;
 			sourceTree = "<group>";
 		};
+		8C45F7BE1FC468C70004153C /* DeliciousSwiftiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8C45F7BF1FC468C70004153C /* DeliciousSwiftiOS.h */,
+				8C45F7C01FC468C70004153C /* Info.plist */,
+				8C45F8181FC46C710004153C /* Algorithms.swift */,
+				8C45F8241FC46C730004153C /* Arrays.swift */,
+				8C45F8201FC46C720004153C /* Booleans.swift */,
+				8C45F8431FC46D030004153C /* Colors.swift */,
+				8C45F8441FC46D030004153C /* Dialogs.swift */,
+				8C45F8211FC46C720004153C /* Dates.swift */,
+				8C45F8161FC46C710004153C /* Dictionaries.swift */,
+				8C45F81A1FC46C720004153C /* Files.swift */,
+				8C45F81D1FC46C720004153C /* Floats.swift */,
+				8C45F81C1FC46C720004153C /* HTTP.swift */,
+				8C45F8231FC46C720004153C /* Integers.swift */,
+				8C45F8221FC46C720004153C /* Log.swift */,
+				8C45F8171FC46C710004153C /* Plists.swift */,
+				8C45F81E1FC46C720004153C /* Strings.swift */,
+				8C45F8191FC46C720004153C /* Tasks.swift */,
+			);
+			path = DeliciousSwiftiOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,6 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C15BA4D1FB1F9C70082BD05 /* DeliciousSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C45F7BA1FC468C70004153C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C45F7C11FC468C70004153C /* DeliciousSwiftiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +219,24 @@
 			productReference = 8C15BA481FB1F9C70082BD05 /* DeliciousSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8C45F7BC1FC468C70004153C /* DeliciousSwiftiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C45F7C41FC468C70004153C /* Build configuration list for PBXNativeTarget "DeliciousSwiftiOS" */;
+			buildPhases = (
+				8C45F7B81FC468C70004153C /* Sources */,
+				8C45F7B91FC468C70004153C /* Frameworks */,
+				8C45F7BA1FC468C70004153C /* Headers */,
+				8C45F7BB1FC468C70004153C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliciousSwiftiOS;
+			productName = DeliciousSwiftiOS;
+			productReference = 8C45F7BD1FC468C70004153C /* DeliciousSwiftiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,7 +248,12 @@
 				TargetAttributes = {
 					8C15BA471FB1F9C70082BD05 = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					8C45F7BC1FC468C70004153C = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -158,12 +271,20 @@
 			projectRoot = "";
 			targets = (
 				8C15BA471FB1F9C70082BD05 /* DeliciousSwift */,
+				8C45F7BC1FC468C70004153C /* DeliciousSwiftiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8C15BA461FB1F9C70082BD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C45F7BB1FC468C70004153C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,21 +298,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEAC5231FB347D70077475E /* HTTP.swift in Sources */,
-				8CEAC4FF1FB3142F0077475E /* Integers.swift in Sources */,
-				8CEAC4FD1FB3139A0077475E /* Floats.swift in Sources */,
-				8C15BA561FB1FC3D0082BD05 /* Log.swift in Sources */,
-				8CEAC5011FB3251E0077475E /* Dictionaries.swift in Sources */,
-				8C15BA5C1FB1FEA60082BD05 /* Colors.swift in Sources */,
-				8C15BA601FB209F90082BD05 /* Arrays.swift in Sources */,
-				8C15BA581FB1FCBA0082BD05 /* Strings.swift in Sources */,
-				8CEAC4FB1FB30D220077475E /* Booleans.swift in Sources */,
-				8CEAC5051FB32E1A0077475E /* Dates.swift in Sources */,
-				8CEAC5211FB3434F0077475E /* Algorithms.swift in Sources */,
-				8C15BA541FB1F9D30082BD05 /* Files.swift in Sources */,
-				8C15BA5E1FB1FF280082BD05 /* Tasks.swift in Sources */,
-				8CEAC5031FB326AF0077475E /* Plists.swift in Sources */,
-				8C15BA5A1FB1FE320082BD05 /* Dialogs.swift in Sources */,
+				8C45F80D1FC46C640004153C /* Tasks.swift in Sources */,
+				8C45F8101FC46C640004153C /* Colors.swift in Sources */,
+				8C45F8121FC46C640004153C /* Log.swift in Sources */,
+				8C45F8091FC46C640004153C /* HTTP.swift in Sources */,
+				8C45F8151FC46C640004153C /* Plists.swift in Sources */,
+				8C45F8291FC46C730004153C /* Algorithms.swift in Sources */,
+				8C45F80B1FC46C640004153C /* Dictionaries.swift in Sources */,
+				8C45F82B1FC46C730004153C /* Tasks.swift in Sources */,
+				8C45F8071FC46C640004153C /* Booleans.swift in Sources */,
+				8C45F8141FC46C640004153C /* Integers.swift in Sources */,
+				8C45F8351FC46C730004153C /* Strings.swift in Sources */,
+				8C45F8111FC46C640004153C /* Floats.swift in Sources */,
+				8C45F80F1FC46C640004153C /* Arrays.swift in Sources */,
+				8C45F8271FC46C730004153C /* Plists.swift in Sources */,
+				8C45F83B1FC46C730004153C /* Dates.swift in Sources */,
+				8C45F8081FC46C640004153C /* Dates.swift in Sources */,
+				8C45F8311FC46C730004153C /* HTTP.swift in Sources */,
+				8C45F8471FC46D040004153C /* Dialogs.swift in Sources */,
+				8C45F8411FC46C730004153C /* Arrays.swift in Sources */,
+				8C45F83F1FC46C730004153C /* Integers.swift in Sources */,
+				8C45F8251FC46C730004153C /* Dictionaries.swift in Sources */,
+				8C45F8451FC46D040004153C /* Colors.swift in Sources */,
+				8C45F80E1FC46C640004153C /* Algorithms.swift in Sources */,
+				8C45F8331FC46C730004153C /* Floats.swift in Sources */,
+				8C45F83D1FC46C730004153C /* Log.swift in Sources */,
+				8C45F8131FC46C640004153C /* Files.swift in Sources */,
+				8C45F82D1FC46C730004153C /* Files.swift in Sources */,
+				8C45F80C1FC46C640004153C /* Strings.swift in Sources */,
+				8C45F8391FC46C730004153C /* Booleans.swift in Sources */,
+				8C45F80A1FC46C640004153C /* Dialogs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C45F7B81FC468C70004153C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C45F8341FC46C730004153C /* Floats.swift in Sources */,
+				8C45F8361FC46C730004153C /* Strings.swift in Sources */,
+				8C45F8481FC46D040004153C /* Dialogs.swift in Sources */,
+				8C45F83E1FC46C730004153C /* Log.swift in Sources */,
+				8C45F8461FC46D040004153C /* Colors.swift in Sources */,
+				8C45F82C1FC46C730004153C /* Tasks.swift in Sources */,
+				8C45F8421FC46C730004153C /* Arrays.swift in Sources */,
+				8C45F83C1FC46C730004153C /* Dates.swift in Sources */,
+				8C45F8401FC46C730004153C /* Integers.swift in Sources */,
+				8C45F8321FC46C730004153C /* HTTP.swift in Sources */,
+				8C45F8281FC46C730004153C /* Plists.swift in Sources */,
+				8C45F82E1FC46C730004153C /* Files.swift in Sources */,
+				8C45F8261FC46C730004153C /* Dictionaries.swift in Sources */,
+				8C45F83A1FC46C730004153C /* Booleans.swift in Sources */,
+				8C45F82A1FC46C730004153C /* Algorithms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +517,56 @@
 			};
 			name = Release;
 		};
+		8C45F7C21FC468C70004153C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R8BYM8P26B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeliciousSwiftiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwiftiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C45F7C31FC468C70004153C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R8BYM8P26B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeliciousSwiftiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.insili.DeliciousSwiftiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +584,15 @@
 			buildConfigurations = (
 				8C15BA511FB1F9C70082BD05 /* Debug */,
 				8C15BA521FB1F9C70082BD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C45F7C41FC468C70004153C /* Build configuration list for PBXNativeTarget "DeliciousSwiftiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C45F7C21FC468C70004153C /* Debug */,
+				8C45F7C31FC468C70004153C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

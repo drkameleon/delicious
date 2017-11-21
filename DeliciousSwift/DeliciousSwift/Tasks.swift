@@ -21,6 +21,8 @@ func delay(_ seconds: Int, _ function: @escaping () -> Void) {
     function()
 }
 
+#if os(OSX)
+
 /**
  Executes terminal command (a)synchronously
 */
@@ -82,3 +84,5 @@ func executeTerminal(_ command: String, args: [String] = [], handler: @escaping 
         handler(outResult!, errResult!)
     }
 }
+
+#endif

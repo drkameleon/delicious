@@ -13,6 +13,8 @@
 
 import Foundation
 
+#if os(OSX)
+
 /**
  Displays alert dialog/sheet
  */
@@ -116,3 +118,5 @@ func saveDialog(handler: @escaping (String)->Void, otherwise: @escaping ()->Void
             : otherwise()
     }
 }
+
+#endif
