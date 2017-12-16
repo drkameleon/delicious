@@ -108,6 +108,17 @@ public extension String {
     }
     
     /**
+    Writes string to temp file
+    */
+    func writeToTmp(_ ext: String = "txt", encoding: String.Encoding = .utf8) -> String {
+        let tmpPath = temporaryFile(ext)
+        
+        self.writeToFile(tmpPath, encoding: encoding)
+        
+        return tmpPath
+    }
+    
+    /**
      Checks if string begins with given string
      */
     func beginsWith(_ s: String) -> Bool {

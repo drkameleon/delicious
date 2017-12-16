@@ -126,5 +126,26 @@ public extension String {
             return nil
         }
     }
+
 }
 
+/**
+ Gets temporary folder path
+ */
+
+public func temporaryFolder() -> String {
+    let tempDirectoryURL = NSURL.fileURL(withPath: NSTemporaryDirectory(), isDirectory: true)
+    
+    return tempDirectoryURL.path
+}
+
+/**
+ Gets temporary folder path
+ */
+
+public func temporaryFile(_ ext: String = "txt") -> String {
+    let path = temporaryFolder()
+    let uniqueFilename = ProcessInfo.processInfo.globallyUniqueString + "." + ext
+    
+    return path + "/" + uniqueFilename
+}

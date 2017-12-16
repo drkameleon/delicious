@@ -16,7 +16,7 @@ import Foundation
 /**
  Delays block execution for given number of seconds
  */
-func delay(_ seconds: Int, _ function: @escaping () -> Void) {
+public func delay(_ seconds: Int, _ function: @escaping () -> Void) {
     sleep(UInt32(seconds))
     function()
 }
@@ -26,7 +26,7 @@ func delay(_ seconds: Int, _ function: @escaping () -> Void) {
 /**
  Executes terminal command (a)synchronously
 */
-func executeTerminal(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true) {
+public func executeTerminal(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true) {
     
     printLog()
     
