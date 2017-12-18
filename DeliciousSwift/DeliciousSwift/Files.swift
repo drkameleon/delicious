@@ -126,6 +126,22 @@ public extension String {
             return nil
         }
     }
+    
+    /**
+     Gets file contents from path as string
+     */
+    func readContents(encoding: String.Encoding = .utf8) -> String? {
+        let url = URL(fileURLWithPath: self)
+        
+        do {
+            let textContents = try String(contentsOf: url, encoding: encoding)
+            return textContents
+        }
+        catch let error {
+            printLog(error, error: true)
+            return nil
+        }
+    }
 
 }
 
