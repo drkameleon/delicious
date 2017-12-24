@@ -24,9 +24,9 @@ public func delay(_ seconds: Int, _ function: @escaping () -> Void) {
 #if os(OSX)
 
 /**
- Executes terminal command (a)synchronously
+ Executes terminal command asynchronously
 */
-public func executeTerminal(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void, async: Bool = true) {
+public func executeTerminal(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void) {
     
     printLog()
     
@@ -52,25 +52,9 @@ public func executeTerminal(_ command: String, args: [String] = [], handler: @es
     process.standardOutput = outputPipe
     process.standardError = errorPipe
     
-    if async {
-        // asynchronous execution
-        
-        DispatchQueue.global().async {
-            
-            process.launch()
-            process.waitUntilExit()
-            
-            let outResult = String(data: outputPipe.fileHandleForReading.readDataToEndOfFile(),
-                                   encoding: .utf8)
-            
-            let errResult = String(data: errorPipe.fileHandleForReading.readDataToEndOfFile(),
-                                   encoding: .utf8)
-            
-            handler(outResult!, errResult!)
-        }
-    }
-    else {
-        // synchronous execution
+    // asynchronous execution
+    
+    DispatchQueue.global().async {
         
         process.launch()
         process.waitUntilExit()
@@ -83,6 +67,50 @@ public func executeTerminal(_ command: String, args: [String] = [], handler: @es
         
         handler(outResult!, errResult!)
     }
+}
+  
+/**
+ Executes terminal command synchronously and return result
+ */
+public func executeTerminalSync(_ command: String, args: [String] = []) -> (String,String) {
+    
+    printLog()
+    
+    let process = Process()
+    
+    let outputPipe = Pipe()
+    let errorPipe = Pipe()
+    
+    var processCommand = command
+    var processArgs = args
+    
+    if !command.hasPrefix("/") {
+        processArgs.insert(command, at: 0)
+        processCommand = "/usr/bin/env"
+    }
+    
+    process.launchPath = processCommand
+    
+    if args.count > 0 {
+        process.arguments = processArgs
+    }
+    
+    process.standardOutput = outputPipe
+    process.standardError = errorPipe
+    
+    // synchronous execution
+    
+    process.launch()
+    process.waitUntilExit()
+    
+    let outResult = String(data: outputPipe.fileHandleForReading.readDataToEndOfFile(),
+                           encoding: .utf8)
+    
+    let errResult = String(data: errorPipe.fileHandleForReading.readDataToEndOfFile(),
+                           encoding: .utf8)
+    
+    return (outResult!, errResult!)
+
 }
 
 #endif

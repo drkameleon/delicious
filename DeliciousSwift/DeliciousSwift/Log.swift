@@ -28,12 +28,14 @@ public func printLog(_ obj: Any? = nil, error: Bool = false, _ file : String = #
         output = "\(error ? "‼️" : "✅") \(filename)/\(line) : \(function)"
     }
     
-    #if DEBUG
-        print(output)
-    #else
-        if error {
-            NSLog(output)
-        }
-    #endif
+    print(output)
+    
+    /*
+    // To print in the usual Console
+     
+    if error {
+        NSLog(output)
+    }
+    */
     
 }
