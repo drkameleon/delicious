@@ -26,7 +26,7 @@ public func delay(_ seconds: Int, _ function: @escaping () -> Void) {
 /**
  Executes terminal command asynchronously
 */
-public func executeTerminal(_ command: String, args: [String] = [], handler: @escaping (String, String)->Void) {
+public func executeTerminal(_ command: String, args: [String] = [], env: [String:String] = [:], handler: @escaping (String, String)->Void) {
     
     printLog()
     
@@ -48,6 +48,13 @@ public func executeTerminal(_ command: String, args: [String] = [], handler: @es
     if args.count > 0 {
         process.arguments = processArgs
     }
+    
+    var environment = ProcessInfo.processInfo.environment
+    
+    for (k,v) in env {
+        environment[k] = v
+    }
+    process.environment = environment
     
     process.standardOutput = outputPipe
     process.standardError = errorPipe
@@ -72,7 +79,7 @@ public func executeTerminal(_ command: String, args: [String] = [], handler: @es
 /**
  Executes terminal command synchronously and return result
  */
-public func executeTerminalSync(_ command: String, args: [String] = []) -> (String,String) {
+public func executeTerminalSync(_ command: String, args: [String] = [], env: [String:String] = [:]) -> (String,String) {
     
     printLog()
     
@@ -94,6 +101,13 @@ public func executeTerminalSync(_ command: String, args: [String] = []) -> (Stri
     if args.count > 0 {
         process.arguments = processArgs
     }
+
+    var environment = ProcessInfo.processInfo.environment
+    
+    for (k,v) in env {
+        environment[k] = v
+    }
+    process.environment = environment
     
     process.standardOutput = outputPipe
     process.standardError = errorPipe
