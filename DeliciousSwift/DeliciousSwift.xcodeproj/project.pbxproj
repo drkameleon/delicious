@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C15BA4D1FB1F9C70082BD05 /* DeliciousSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15BA4B1FB1F9C70082BD05 /* DeliciousSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C2F514D2003A0A50006C33C /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F514C2003A0A50006C33C /* Bundle.swift */; };
 		8C45F8071FC46C640004153C /* Booleans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC4FA1FB30D220077475E /* Booleans.swift */; };
 		8C45F8081FC46C640004153C /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5041FB32E1A0077475E /* Dates.swift */; };
 		8C45F8091FC46C640004153C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC5221FB347D60077475E /* HTTP.swift */; };
@@ -36,6 +37,7 @@
 		8C15BA5B1FB1FEA60082BD05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8C15BA5D1FB1FF280082BD05 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		8C15BA5F1FB209F90082BD05 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		8C2F514C2003A0A50006C33C /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		8CEAC4FA1FB30D220077475E /* Booleans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booleans.swift; sourceTree = "<group>"; };
 		8CEAC4FC1FB3139A0077475E /* Floats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floats.swift; sourceTree = "<group>"; };
 		8CEAC4FE1FB3142F0077475E /* Integers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integers.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				8CEAC5201FB3434F0077475E /* Algorithms.swift */,
 				8C15BA5F1FB209F90082BD05 /* Arrays.swift */,
 				8CEAC4FA1FB30D220077475E /* Booleans.swift */,
+				8C2F514C2003A0A50006C33C /* Bundle.swift */,
 				8C15BA5B1FB1FEA60082BD05 /* Colors.swift */,
 				8C15BA591FB1FE320082BD05 /* Dialogs.swift */,
 				8CEAC5041FB32E1A0077475E /* Dates.swift */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C45F80D1FC46C640004153C /* Tasks.swift in Sources */,
+				8C2F514D2003A0A50006C33C /* Bundle.swift in Sources */,
 				8C45F8101FC46C640004153C /* Colors.swift in Sources */,
 				8C45F8121FC46C640004153C /* Log.swift in Sources */,
 				8C45F8091FC46C640004153C /* HTTP.swift in Sources */,
